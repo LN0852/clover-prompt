@@ -21,8 +21,12 @@
       </div>
     </div>
     <div class="input-container">
-      <!-- @keydown.enter="sendMessage" -->
-      <input v-model="state.userInput" type="text" placeholder="Type here..." />
+      <input
+        v-model="state.userInput"
+        type="text"
+        @keydown.enter="sendMessage"
+        placeholder="Type here..."
+      />
       <button @click="sendMessage">Send</button>
     </div>
   </div>
